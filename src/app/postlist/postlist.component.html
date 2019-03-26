@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="h3">Mes posts</div>
+</div>
+
+<div class="container">
+  <app-postlistitem
+   *ngFor="let post of Posts"
+   [title]="post.title"
+   [content]="post.content"
+   [created_at]="post.created_at"
+   [loveIts]="post.loveIts">
+  </app-postlistitem>
+</div>
